@@ -15,12 +15,16 @@ namespace TodoUI {
         }
 
         private void addItem_Click(object sender, EventArgs e) {
+
+            if (itemsTextBox.Text != string.Empty) {
             
-            todo.items.Add(new Item { Text = itemsTextBox.Text });
+                todo.items.Add(new Item { Text = itemsTextBox.Text });
 
-            itemsListBox.Items.Add(todo.items[todo.items.Count - 1].Text);
+                itemsListBox.Items.Add(todo.items[todo.items.Count - 1].Text);
 
-            itemsTextBox.Text = string.Empty;
+                itemsTextBox.Text = string.Empty;
+            
+            }
 
         }
 
