@@ -1,0 +1,14 @@
+C:\Users\Ankur\Desktop\Todo\TodoUI\bin\Release\TodoUI.exe.config
+C:\Users\Ankur\Desktop\Todo\TodoUI\bin\Release\TodoUI.exe
+C:\Users\Ankur\Desktop\Todo\TodoUI\bin\Release\TodoUI.pdb
+C:\Users\Ankur\Desktop\Todo\TodoUI\bin\Release\TodoLibrary.dll
+C:\Users\Ankur\Desktop\Todo\TodoUI\bin\Release\TodoLibrary.pdb
+C:\Users\Ankur\Desktop\Todo\TodoUI\obj\Release\TodoUI.csproj.AssemblyReference.cache
+C:\Users\Ankur\Desktop\Todo\TodoUI\obj\Release\TodoUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\Ankur\Desktop\Todo\TodoUI\obj\Release\TodoUI.Properties.Resources.resources
+C:\Users\Ankur\Desktop\Todo\TodoUI\obj\Release\TodoUI.TodoUI.resources
+C:\Users\Ankur\Desktop\Todo\TodoUI\obj\Release\TodoUI.csproj.GenerateResource.cache
+C:\Users\Ankur\Desktop\Todo\TodoUI\obj\Release\TodoUI.csproj.CoreCompileInputs.cache
+C:\Users\Ankur\Desktop\Todo\TodoUI\obj\Release\TodoUI.csproj.CopyComplete
+C:\Users\Ankur\Desktop\Todo\TodoUI\obj\Release\TodoUI.exe
+C:\Users\Ankur\Desktop\Todo\TodoUI\obj\Release\TodoUI.pdb

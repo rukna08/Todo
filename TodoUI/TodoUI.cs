@@ -56,6 +56,8 @@ namespace TodoUI {
                 binaryWriter.Write(item.Text);
             }
 
+            MessageBox.Show("Items saved!");
+
         }
 
         private void loadPreviousState_Click(object sender, EventArgs e) {
@@ -87,6 +89,8 @@ namespace TodoUI {
                 i++;
 
             }
+
+            MessageBox.Show("Previous items loaded!");
 
         }
 
