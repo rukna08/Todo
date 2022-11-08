@@ -50,17 +50,30 @@ namespace TodoUI {
 
         private void saveItems_Click(object sender, EventArgs e) {
 
+            if (File.Exists("itemdata")) {
+
+                File.Delete("itemdata");
+
+                MessageBox.Show("itemdata deleted!");
+
+            }
+
             binaryWriter = new BinaryWriter(new FileStream("itemdata", FileMode.Create));
 
             foreach(Item item in todo.items) {
                 binaryWriter.Write(item.Text);
             }
 
+            binaryWriter.Close();
+
             MessageBox.Show("Items saved!");
 
         }
 
         private void loadPreviousState_Click(object sender, EventArgs e) {
+
+            itemsListBox.Items.Clear();
+            todo.items.Clear();
 
             binaryReader = new BinaryReader(new FileStream("itemdata", FileMode.Open));
 
@@ -91,6 +104,8 @@ namespace TodoUI {
             }
 
             MessageBox.Show("Previous items loaded!");
+
+            binaryReader.Close();
 
         }
 
