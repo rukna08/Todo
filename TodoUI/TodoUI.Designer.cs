@@ -24,7 +24,7 @@
         /// </summary>
         private void InitializeComponent() {
             this.itemsListBox = new System.Windows.Forms.ListBox();
-            this.itemTextBox = new System.Windows.Forms.TextBox();
+            this.itemsTextBox = new System.Windows.Forms.TextBox();
             this.addItem = new System.Windows.Forms.Button();
             this.removeItem = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -39,13 +39,13 @@
             this.itemsListBox.Size = new System.Drawing.Size(417, 404);
             this.itemsListBox.TabIndex = 0;
             // 
-            // itemTextBox
+            // itemsTextBox
             // 
-            this.itemTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.itemTextBox.Location = new System.Drawing.Point(12, 422);
-            this.itemTextBox.Name = "itemTextBox";
-            this.itemTextBox.Size = new System.Drawing.Size(417, 26);
-            this.itemTextBox.TabIndex = 1;
+            this.itemsTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itemsTextBox.Location = new System.Drawing.Point(12, 422);
+            this.itemsTextBox.Name = "itemsTextBox";
+            this.itemsTextBox.Size = new System.Drawing.Size(417, 26);
+            this.itemsTextBox.TabIndex = 1;
             // 
             // addItem
             // 
@@ -76,7 +76,7 @@
             this.ClientSize = new System.Drawing.Size(441, 532);
             this.Controls.Add(this.removeItem);
             this.Controls.Add(this.addItem);
-            this.Controls.Add(this.itemTextBox);
+            this.Controls.Add(this.itemsTextBox);
             this.Controls.Add(this.itemsListBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -91,7 +91,7 @@
         #endregion
 
         private System.Windows.Forms.ListBox itemsListBox;
-        private System.Windows.Forms.TextBox itemTextBox;
+        private System.Windows.Forms.TextBox itemsTextBox;
         private System.Windows.Forms.Button addItem;
         private System.Windows.Forms.Button removeItem;
     }
