@@ -10,6 +10,7 @@ namespace TodoUI {
         private Todo todo = new Todo();
 
         private BinaryWriter binaryWriter;
+
         private BinaryReader binaryReader;
 
         public TodoUI() {
@@ -73,6 +74,7 @@ namespace TodoUI {
         private void loadPreviousState_Click(object sender, EventArgs e) {
 
             itemsListBox.Items.Clear();
+
             todo.items.Clear();
 
             binaryReader = new BinaryReader(new FileStream("itemdata", FileMode.Open));
@@ -106,6 +108,14 @@ namespace TodoUI {
             MessageBox.Show("Previous items loaded!");
 
             binaryReader.Close();
+
+        }
+
+        private void clearItems_Click(object sender, EventArgs e) {
+
+            itemsListBox.Items.Clear();
+
+            todo.items.Clear();
 
         }
 

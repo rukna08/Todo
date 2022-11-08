@@ -30,6 +30,7 @@
             this.removeItem = new System.Windows.Forms.Button();
             this.saveItems = new System.Windows.Forms.Button();
             this.loadPreviousState = new System.Windows.Forms.Button();
+            this.clearItems = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // itemsListBox
@@ -64,7 +65,7 @@
             // removeItem
             // 
             this.removeItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.removeItem.Location = new System.Drawing.Point(12, 519);
+            this.removeItem.Location = new System.Drawing.Point(125, 454);
             this.removeItem.Name = "removeItem";
             this.removeItem.Size = new System.Drawing.Size(107, 59);
             this.removeItem.TabIndex = 3;
@@ -75,7 +76,7 @@
             // saveItems
             // 
             this.saveItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.saveItems.Location = new System.Drawing.Point(125, 454);
+            this.saveItems.Location = new System.Drawing.Point(12, 524);
             this.saveItems.Name = "saveItems";
             this.saveItems.Size = new System.Drawing.Size(107, 59);
             this.saveItems.TabIndex = 4;
@@ -86,7 +87,7 @@
             // loadPreviousState
             // 
             this.loadPreviousState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.loadPreviousState.Location = new System.Drawing.Point(125, 519);
+            this.loadPreviousState.Location = new System.Drawing.Point(125, 524);
             this.loadPreviousState.Name = "loadPreviousState";
             this.loadPreviousState.Size = new System.Drawing.Size(107, 59);
             this.loadPreviousState.TabIndex = 5;
@@ -94,11 +95,23 @@
             this.loadPreviousState.UseVisualStyleBackColor = true;
             this.loadPreviousState.Click += new System.EventHandler(this.loadPreviousState_Click);
             // 
+            // clearItems
+            // 
+            this.clearItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.clearItems.Location = new System.Drawing.Point(238, 454);
+            this.clearItems.Name = "clearItems";
+            this.clearItems.Size = new System.Drawing.Size(107, 59);
+            this.clearItems.TabIndex = 6;
+            this.clearItems.Text = "Clear";
+            this.clearItems.UseVisualStyleBackColor = true;
+            this.clearItems.Click += new System.EventHandler(this.clearItems_Click);
+            // 
             // TodoUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(441, 595);
+            this.Controls.Add(this.clearItems);
             this.Controls.Add(this.loadPreviousState);
             this.Controls.Add(this.saveItems);
             this.Controls.Add(this.removeItem);
@@ -124,6 +137,7 @@
         private System.Windows.Forms.Button removeItem;
         private System.Windows.Forms.Button saveItems;
         private System.Windows.Forms.Button loadPreviousState;
+        private System.Windows.Forms.Button clearItems;
     }
 }
 
