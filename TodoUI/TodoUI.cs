@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Windows.Forms;
 using TodoLibrary;
 
@@ -7,6 +8,8 @@ namespace TodoUI {
     public partial class TodoUI : Form {
         
         private Todo todo = new Todo();
+
+        private BinaryWriter binaryWriter;
 
         public TodoUI() {
 
@@ -33,7 +36,9 @@ namespace TodoUI {
             string selectedItem = (string)itemsListBox.SelectedItem;
 
             Item tempItem = new Item() {
+
                 Text = selectedItem
+            
             };
 
             todo.items.Remove(tempItem);
@@ -42,6 +47,15 @@ namespace TodoUI {
 
         }
 
+        private void saveItems_Click(object sender, EventArgs e) {
+
+            binaryWriter = new BinaryWriter(new FileStream("itemdata", FileMode.Create));
+
+            foreach(Item item in todo.items) {
+                binaryWriter.Write(item.Text);
+            }
+
+        }
     }
 
 }

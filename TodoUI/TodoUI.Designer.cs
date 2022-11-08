@@ -23,10 +23,12 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TodoUI));
             this.itemsListBox = new System.Windows.Forms.ListBox();
             this.itemsTextBox = new System.Windows.Forms.TextBox();
             this.addItem = new System.Windows.Forms.Button();
             this.removeItem = new System.Windows.Forms.Button();
+            this.saveItems = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // itemsListBox
@@ -61,7 +63,7 @@
             // removeItem
             // 
             this.removeItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.removeItem.Location = new System.Drawing.Point(322, 454);
+            this.removeItem.Location = new System.Drawing.Point(167, 454);
             this.removeItem.Name = "removeItem";
             this.removeItem.Size = new System.Drawing.Size(107, 59);
             this.removeItem.TabIndex = 3;
@@ -69,16 +71,29 @@
             this.removeItem.UseVisualStyleBackColor = true;
             this.removeItem.Click += new System.EventHandler(this.removeItem_Click);
             // 
+            // saveItems
+            // 
+            this.saveItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.saveItems.Location = new System.Drawing.Point(322, 454);
+            this.saveItems.Name = "saveItems";
+            this.saveItems.Size = new System.Drawing.Size(107, 58);
+            this.saveItems.TabIndex = 4;
+            this.saveItems.Text = "Save";
+            this.saveItems.UseVisualStyleBackColor = true;
+            this.saveItems.Click += new System.EventHandler(this.saveItems_Click);
+            // 
             // TodoUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(441, 532);
+            this.ClientSize = new System.Drawing.Size(441, 530);
+            this.Controls.Add(this.saveItems);
             this.Controls.Add(this.removeItem);
             this.Controls.Add(this.addItem);
             this.Controls.Add(this.itemsTextBox);
             this.Controls.Add(this.itemsListBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "TodoUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -94,6 +109,7 @@
         private System.Windows.Forms.TextBox itemsTextBox;
         private System.Windows.Forms.Button addItem;
         private System.Windows.Forms.Button removeItem;
+        private System.Windows.Forms.Button saveItems;
     }
 }
 
