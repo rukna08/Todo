@@ -4,3 +4,9 @@ C:\Users\Ankur\Desktop\TodoLibrary\obj\Debug\TodoLibrary.csproj.AssemblyReferenc
 C:\Users\Ankur\Desktop\TodoLibrary\obj\Debug\TodoLibrary.csproj.CoreCompileInputs.cache
 C:\Users\Ankur\Desktop\TodoLibrary\obj\Debug\TodoLibrary.dll
 C:\Users\Ankur\Desktop\TodoLibrary\obj\Debug\TodoLibrary.pdb
+C:\Users\Ankur\Desktop\Todo\TodoLibrary\bin\Debug\TodoLibrary.dll
+C:\Users\Ankur\Desktop\Todo\TodoLibrary\bin\Debug\TodoLibrary.pdb
+C:\Users\Ankur\Desktop\Todo\TodoLibrary\obj\Debug\TodoLibrary.csproj.AssemblyReference.cache
+C:\Users\Ankur\Desktop\Todo\TodoLibrary\obj\Debug\TodoLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Ankur\Desktop\Todo\TodoLibrary\obj\Debug\TodoLibrary.dll
+C:\Users\Ankur\Desktop\Todo\TodoLibrary\obj\Debug\TodoLibrary.pdb
