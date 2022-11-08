@@ -21,7 +21,21 @@ namespace TodoUI {
             itemsListBox.Items.Add(todo.items[todo.items.Count - 1].Text);
 
         }
-    
+
+        private void removeItem_Click(object sender, EventArgs e) {
+
+            string selectedItem = (string)itemsListBox.SelectedItem;
+
+            Item tempItem = new Item() {
+                Text = selectedItem
+            };
+
+            todo.items.Remove(tempItem);
+
+            itemsListBox.Items.Remove(selectedItem);
+
+        }
+
     }
 
 }

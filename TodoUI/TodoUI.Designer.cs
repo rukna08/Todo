@@ -26,6 +26,7 @@
             this.itemsListBox = new System.Windows.Forms.ListBox();
             this.itemTextBox = new System.Windows.Forms.TextBox();
             this.addItem = new System.Windows.Forms.Button();
+            this.removeItem = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // itemsListBox
@@ -54,11 +55,23 @@
             this.addItem.UseVisualStyleBackColor = true;
             this.addItem.Click += new System.EventHandler(this.addItem_Click);
             // 
+            // removeItem
+            // 
+            this.removeItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeItem.Location = new System.Drawing.Point(574, 233);
+            this.removeItem.Name = "removeItem";
+            this.removeItem.Size = new System.Drawing.Size(107, 59);
+            this.removeItem.TabIndex = 3;
+            this.removeItem.Text = "Remove";
+            this.removeItem.UseVisualStyleBackColor = true;
+            this.removeItem.Click += new System.EventHandler(this.removeItem_Click);
+            // 
             // TodoUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.removeItem);
             this.Controls.Add(this.addItem);
             this.Controls.Add(this.itemTextBox);
             this.Controls.Add(this.itemsListBox);
@@ -77,6 +90,7 @@
         private System.Windows.Forms.ListBox itemsListBox;
         private System.Windows.Forms.TextBox itemTextBox;
         private System.Windows.Forms.Button addItem;
+        private System.Windows.Forms.Button removeItem;
     }
 }
 
