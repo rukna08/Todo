@@ -17,6 +17,39 @@ namespace TodoUI {
 
             InitializeComponent();
 
+            if (File.Exists("itemdata")) {
+
+                binaryReader = new BinaryReader(new FileStream("itemdata", FileMode.Open));
+
+                string currentString;
+
+                do {
+
+                    currentString = binaryReader.ReadString();
+
+                    Item tempItem = new Item() {
+
+                        Text = currentString
+
+                    };
+
+                    todo.items.Add(tempItem);
+
+                } while (binaryReader.PeekChar() != -1);
+
+                int i = 0;
+
+                foreach (Item item in todo.items) {
+
+                    itemsListBox.Items.Add(todo.items[i].Text);
+
+                    i++;
+
+                }
+
+                binaryReader.Close();
+
+            }
         }
 
         private void addItem_Click(object sender, EventArgs e) {
@@ -54,8 +87,6 @@ namespace TodoUI {
             if (File.Exists("itemdata")) {
 
                 File.Delete("itemdata");
-
-                MessageBox.Show("itemdata deleted!");
 
             }
 
@@ -104,8 +135,6 @@ namespace TodoUI {
                 i++;
 
             }
-
-            MessageBox.Show("Previous items loaded!");
 
             binaryReader.Close();
 
