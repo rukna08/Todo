@@ -29,6 +29,7 @@
             this.addItem = new System.Windows.Forms.Button();
             this.removeItem = new System.Windows.Forms.Button();
             this.saveItems = new System.Windows.Forms.Button();
+            this.loadPreviousState = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // itemsListBox
@@ -63,7 +64,7 @@
             // removeItem
             // 
             this.removeItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.removeItem.Location = new System.Drawing.Point(167, 454);
+            this.removeItem.Location = new System.Drawing.Point(12, 519);
             this.removeItem.Name = "removeItem";
             this.removeItem.Size = new System.Drawing.Size(107, 59);
             this.removeItem.TabIndex = 3;
@@ -74,19 +75,31 @@
             // saveItems
             // 
             this.saveItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.saveItems.Location = new System.Drawing.Point(322, 454);
+            this.saveItems.Location = new System.Drawing.Point(125, 454);
             this.saveItems.Name = "saveItems";
-            this.saveItems.Size = new System.Drawing.Size(107, 58);
+            this.saveItems.Size = new System.Drawing.Size(107, 59);
             this.saveItems.TabIndex = 4;
             this.saveItems.Text = "Save";
             this.saveItems.UseVisualStyleBackColor = true;
             this.saveItems.Click += new System.EventHandler(this.saveItems_Click);
             // 
+            // loadPreviousState
+            // 
+            this.loadPreviousState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.loadPreviousState.Location = new System.Drawing.Point(125, 519);
+            this.loadPreviousState.Name = "loadPreviousState";
+            this.loadPreviousState.Size = new System.Drawing.Size(107, 59);
+            this.loadPreviousState.TabIndex = 5;
+            this.loadPreviousState.Text = "Load";
+            this.loadPreviousState.UseVisualStyleBackColor = true;
+            this.loadPreviousState.Click += new System.EventHandler(this.loadPreviousState_Click);
+            // 
             // TodoUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(441, 530);
+            this.ClientSize = new System.Drawing.Size(441, 666);
+            this.Controls.Add(this.loadPreviousState);
             this.Controls.Add(this.saveItems);
             this.Controls.Add(this.removeItem);
             this.Controls.Add(this.addItem);
@@ -110,6 +123,7 @@
         private System.Windows.Forms.Button addItem;
         private System.Windows.Forms.Button removeItem;
         private System.Windows.Forms.Button saveItems;
+        private System.Windows.Forms.Button loadPreviousState;
     }
 }
 

@@ -10,6 +10,7 @@ namespace TodoUI {
         private Todo todo = new Todo();
 
         private BinaryWriter binaryWriter;
+        private BinaryReader binaryReader;
 
         public TodoUI() {
 
@@ -56,6 +57,39 @@ namespace TodoUI {
             }
 
         }
+
+        private void loadPreviousState_Click(object sender, EventArgs e) {
+
+            binaryReader = new BinaryReader(new FileStream("itemdata", FileMode.Open));
+
+            string currentString;
+
+            do {
+
+                currentString = binaryReader.ReadString();
+
+                Item tempItem = new Item() {
+
+                    Text = currentString
+
+                };
+
+                todo.items.Add(tempItem);
+
+            } while (binaryReader.PeekChar() != -1);
+
+            int i = 0;
+
+            foreach (Item item in todo.items) {
+                
+                itemsListBox.Items.Add(todo.items[i].Text);
+                
+                i++;
+
+            }
+
+        }
+
     }
 
 }
