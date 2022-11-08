@@ -31,34 +31,37 @@
             // 
             // itemsListBox
             // 
+            this.itemsListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemsListBox.FormattingEnabled = true;
+            this.itemsListBox.ItemHeight = 20;
             this.itemsListBox.Location = new System.Drawing.Point(12, 12);
             this.itemsListBox.Name = "itemsListBox";
-            this.itemsListBox.Size = new System.Drawing.Size(417, 420);
+            this.itemsListBox.Size = new System.Drawing.Size(417, 404);
             this.itemsListBox.TabIndex = 0;
             // 
             // itemTextBox
             // 
-            this.itemTextBox.Location = new System.Drawing.Point(435, 207);
+            this.itemTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itemTextBox.Location = new System.Drawing.Point(12, 422);
             this.itemTextBox.Name = "itemTextBox";
-            this.itemTextBox.Size = new System.Drawing.Size(353, 20);
+            this.itemTextBox.Size = new System.Drawing.Size(417, 26);
             this.itemTextBox.TabIndex = 1;
             // 
             // addItem
             // 
             this.addItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addItem.Location = new System.Drawing.Point(435, 233);
+            this.addItem.Location = new System.Drawing.Point(12, 454);
             this.addItem.Name = "addItem";
             this.addItem.Size = new System.Drawing.Size(107, 59);
             this.addItem.TabIndex = 2;
-            this.addItem.Text = "<- Add";
+            this.addItem.Text = "Add";
             this.addItem.UseVisualStyleBackColor = true;
             this.addItem.Click += new System.EventHandler(this.addItem_Click);
             // 
             // removeItem
             // 
             this.removeItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.removeItem.Location = new System.Drawing.Point(574, 233);
+            this.removeItem.Location = new System.Drawing.Point(322, 454);
             this.removeItem.Name = "removeItem";
             this.removeItem.Size = new System.Drawing.Size(107, 59);
             this.removeItem.TabIndex = 3;
@@ -70,7 +73,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(441, 532);
             this.Controls.Add(this.removeItem);
             this.Controls.Add(this.addItem);
             this.Controls.Add(this.itemTextBox);
