@@ -17,39 +17,6 @@ namespace TodoUI {
 
             InitializeComponent();
 
-            if (File.Exists("itemdata")) {
-
-                binaryReader = new BinaryReader(new FileStream("itemdata", FileMode.Open));
-
-                string currentString;
-
-                do {
-
-                    currentString = binaryReader.ReadString();
-
-                    Item tempItem = new Item() {
-
-                        Text = currentString
-
-                    };
-
-                    todo.items.Add(tempItem);
-
-                } while (binaryReader.PeekChar() != -1);
-
-                int i = 0;
-
-                foreach (Item item in todo.items) {
-
-                    itemsListBox.Items.Add(todo.items[i].Text);
-
-                    i++;
-
-                }
-
-                binaryReader.Close();
-
-            }
         }
 
         private void addItem_Click(object sender, EventArgs e) {
@@ -68,17 +35,30 @@ namespace TodoUI {
 
         private void removeItem_Click(object sender, EventArgs e) {
 
-            string selectedItem = (string)itemsListBox.SelectedItem;
+            string selectedItemString = (string)itemsListBox.SelectedItem;
 
-            Item tempItem = new Item() {
+            Item itemToBeRemoved = null;
 
-                Text = selectedItem
-            
-            };
+            for (int i = 0; i < todo.items.Count; i++) {
 
-            todo.items.Remove(tempItem);
+                if (todo.items[i].Text == selectedItemString) {
 
-            itemsListBox.Items.Remove(selectedItem);
+                    itemToBeRemoved = todo.items[i];
+
+                    break;
+
+                }
+
+            }
+
+            if (itemToBeRemoved != null) {
+                
+                todo.items.Remove(itemToBeRemoved);
+
+            }
+
+
+            itemsListBox.Items.Remove(selectedItemString);
 
         }
 
