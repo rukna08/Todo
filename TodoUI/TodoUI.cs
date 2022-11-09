@@ -17,6 +17,8 @@ namespace TodoUI {
 
             InitializeComponent();
 
+            LoadItems();
+
         }
 
         private void addItem_Click(object sender, EventArgs e) {
@@ -84,39 +86,7 @@ namespace TodoUI {
 
         private void loadPreviousState_Click(object sender, EventArgs e) {
 
-            itemsListBox.Items.Clear();
-
-            todo.items.Clear();
-
-            binaryReader = new BinaryReader(new FileStream("itemdata", FileMode.Open));
-
-            string currentString;
-
-            do {
-
-                currentString = binaryReader.ReadString();
-
-                Item tempItem = new Item() {
-
-                    Text = currentString
-
-                };
-
-                todo.items.Add(tempItem);
-
-            } while (binaryReader.PeekChar() != -1);
-
-            int i = 0;
-
-            foreach (Item item in todo.items) {
-                
-                itemsListBox.Items.Add(todo.items[i].Text);
-                
-                i++;
-
-            }
-
-            binaryReader.Close();
+            LoadItems();
 
         }
 
@@ -125,6 +95,48 @@ namespace TodoUI {
             itemsListBox.Items.Clear();
 
             todo.items.Clear();
+
+        }
+
+        private void LoadItems() {
+
+            if (File.Exists("itemdata")) {
+
+                itemsListBox.Items.Clear();
+
+                todo.items.Clear();
+
+                binaryReader = new BinaryReader(new FileStream("itemdata", FileMode.Open));
+
+                string currentString;
+
+                do {
+
+                    currentString = binaryReader.ReadString();
+
+                    Item tempItem = new Item() {
+
+                        Text = currentString
+
+                    };
+
+                    todo.items.Add(tempItem);
+
+                } while (binaryReader.PeekChar() != -1);
+
+                int i = 0;
+
+                foreach (Item item in todo.items) {
+
+                    itemsListBox.Items.Add(todo.items[i].Text);
+
+                    i++;
+
+                }
+
+                binaryReader.Close();
+
+            }
 
         }
 
