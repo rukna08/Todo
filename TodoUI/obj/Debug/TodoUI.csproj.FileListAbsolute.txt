@@ -26,3 +26,16 @@ C:\Users\Ankur\Desktop\Todo\TodoUI\obj\Debug\TodoUI.csproj.CoreCompileInputs.cac
 C:\Users\Ankur\Desktop\Todo\TodoUI\obj\Debug\TodoUI.csproj.CopyComplete
 C:\Users\Ankur\Desktop\Todo\TodoUI\obj\Debug\TodoUI.exe
 C:\Users\Ankur\Desktop\Todo\TodoUI\obj\Debug\TodoUI.pdb
+C:\work\Todo\TodoUI\bin\Debug\TodoUI.exe.config
+C:\work\Todo\TodoUI\bin\Debug\TodoUI.exe
+C:\work\Todo\TodoUI\bin\Debug\TodoUI.pdb
+C:\work\Todo\TodoUI\bin\Debug\TodoLibrary.dll
+C:\work\Todo\TodoUI\bin\Debug\TodoLibrary.pdb
+C:\work\Todo\TodoUI\obj\Debug\TodoUI.csproj.AssemblyReference.cache
+C:\work\Todo\TodoUI\obj\Debug\TodoUI.Properties.Resources.resources
+C:\work\Todo\TodoUI\obj\Debug\TodoUI.TodoUI.resources
+C:\work\Todo\TodoUI\obj\Debug\TodoUI.csproj.GenerateResource.cache
+C:\work\Todo\TodoUI\obj\Debug\TodoUI.csproj.CoreCompileInputs.cache
+C:\work\Todo\TodoUI\obj\Debug\TodoUI.csproj.CopyComplete
+C:\work\Todo\TodoUI\obj\Debug\TodoUI.exe
+C:\work\Todo\TodoUI\obj\Debug\TodoUI.pdb

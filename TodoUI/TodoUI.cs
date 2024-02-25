@@ -108,11 +108,19 @@ namespace TodoUI {
 
                 binaryReader = new BinaryReader(new FileStream("itemdata", FileMode.Open));
 
-                string currentString;
+                string currentString = "";
 
                 do {
 
-                    currentString = binaryReader.ReadString();
+                    try {
+                        
+                        currentString = binaryReader.ReadString();
+                        
+                    } catch (Exception ex)
+                    {
+                        
+                    }
+
 
                     Item tempItem = new Item() {
 
